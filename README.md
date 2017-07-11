@@ -1,7 +1,7 @@
 # ckeditor_nodejs_with_img_upload
 This is full and functional new CKEditor with NodeJs integration. Along with image upload and browser from server as well. Which is not availble with CKEditor free. So enjoy FREE image upload too.
 
-##How to install
+## How to install
 
 1. Keep the ckeditor folder into your public folder
 
@@ -17,4 +17,4 @@ This is full and functional new CKEditor with NodeJs integration. Along with ima
 
 5. When you run that template file's page. You should see the ckeditor. When you click on image icon you will get both browse from server [along with creating folder]. And upload new file as well.
 
-###Any question or help kindly update me.
+### Any question or help kindly update me.
