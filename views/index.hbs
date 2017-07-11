@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test Ckeditor</title>
+<body>
+      <h5> Description :</h5>
+      <div id="descriptiondiv" >
+        <textarea id="editor1" name="editor1" style="width:500px"></textarea></div>
+
+</body>
+</html>
+<script src="/js/jquery.js" crossorigin="anonymous"></script>
+<script src="/js/admin-validations.js" crossorigin="anonymous"></script>
+<link type="text/css" rel="stylesheet" href="/stylesheets/jquery-te-1.4.0.css">
+<script type="text/javascript" src="/js/jquery-te-1.4.0.min.js" charset="utf-8"></script>
+<script src="/ckeditor/ckeditor.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+CKEDITOR.replace( 'editor1', {
+    filebrowserBrowseUrl: '/ckeditor/plugins/imagebrowser/browser/browser.html',
+    filebrowserUploadUrl: '/upload_url?Type=File',
+    filebrowserImageUploadUrl: '/upload_url?Type=Image',
+    filebrowserFlashUploadUrl: '/upload_url?Type=Flash'
+});
+   
+var description=CKEDITOR.instances.editor1.getData();
+  console.log(description);
+        var data = {description:description};
+        $.ajax({
+          url: "/backend/api/v1/savedata",
+          method:'post',
+          data:data,
+          success:function(data){
+           
+         alert("send data");
+
+          }
+      });
+     
+  });
+
+
+
+
+});
+</script>
