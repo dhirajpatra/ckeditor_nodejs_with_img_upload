@@ -17,4 +17,4 @@ This is full and functional new CKEditor with NodeJs integration. Along with ima
 
 5. When you run that template file's page. You should see the ckeditor. When you click on image icon you will get both browse from server [along with creating folder]. And upload new file as well.
 
-Any question or help kindly update me.
+###Any question or help kindly update me.
