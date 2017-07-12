@@ -1,6 +1,9 @@
 # ckeditor_nodejs_with_img_upload
 This is full and functional new CKEditor with NodeJs integration. Along with image upload and browser from server as well. Which is not availble with CKEditor free. So enjoy FREE image upload too.
 
+## Also have AWS S3 upload and browse function included
+So that you can integrate with S3 and browse and upload files/images from CkEditor.
+
 ## How to install
 
 1. Keep the ckeditor folder into your public folder
